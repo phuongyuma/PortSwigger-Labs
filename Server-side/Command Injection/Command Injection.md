@@ -8,7 +8,7 @@ We will insert this to **email** parameter of submit feedback ( i tried insert t
 
 	Explain: || to split the shell command with input of user
 
-![[Img_note/Pasted image 20221207143100.png]]
+![[../../Img_note/Pasted image 20221207143100.png]]
 
 ![[Pasted image 20221207143100.png]]
 
