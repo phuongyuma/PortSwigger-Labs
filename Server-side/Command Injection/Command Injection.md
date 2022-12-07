@@ -8,6 +8,9 @@ We will insert this to **email** parameter of submit feedback ( i tried insert t
 
 	Explain: || to split the shell command with input of user
 
+
+!(Img_note/Pasted image 20221207143100.png)
+
 ![[Pasted image 20221207143100.png]]
 
 On home page, onpen an image on a new tab, and change **filename=output.txt**. Here, we can see output of command **whoami**
