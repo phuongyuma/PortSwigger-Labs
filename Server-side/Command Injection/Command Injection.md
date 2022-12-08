@@ -9,13 +9,11 @@ We will insert this to **email** parameter of submit feedback ( i tried insert t
 	Explain: || to split the shell command with input of user
 
 
-
 ![](../../Img_note/Pasted%20image%2020221207143100.png)
 
-![[Pasted image 20221207143100.png]]
-
 On home page, onpen an image on a new tab, and change **filename=output.txt**. Here, we can see output of command **whoami**
-![[Pasted image 20221207142956.png]]
+![](../../Img_note/Pasted%20image%2020221207142956.png)
+
 
 Finally, we go to home page and get the congratulations
-![[Pasted image 20221207143013.png]]
+![](../../Img_note/Pasted%20image%2020221207143013.png)

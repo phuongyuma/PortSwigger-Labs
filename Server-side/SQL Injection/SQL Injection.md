@@ -10,11 +10,10 @@ Query database version of Oracle:
 >SELECT banner FROM v$version
 
 Check number of columns that are being return by the query => Number of columns = 2
-![[Pasted image 20221207131757.png]]
+![](../../Img_note/Pasted%20image%2020221207131757.png)
 
 Add query database version of orcale to the url
 > ' UNION SELECT BANNER, NULL FROM v$version--
 
-Add **'** to end the statement is called, add **--** to comment the the rest of the statement is called
-
-![[Pasted image 20221207132839.png]]
+Add **'** to end the statement is called, add **--** to comment the the rest of the statement is called. And now we have information of the database
+![](../../Img_note/Pasted%20image%2020221207132839.png)
