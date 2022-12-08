@@ -7,6 +7,7 @@ Credential: `wiener:peter`
 After login, this web applicaion let we select role : user, content author at page **/role-selector**
 
 Search google and i know to use **target -> site map -> engagement tools -> discovery content** to  find more directory of this web application
+
 I find page **/admin**
 ![](../../Img_note/Pasted%20image%2020221207150903.png)
 
