@@ -9,6 +9,7 @@ After login, this web applicaion let we select role : user, content author at pa
 Search google and i know to use **target -> site map -> engagement tools -> discovery content** to  find more directory of this web application
 
 I find page **/admin**
+
 ![](../../Img_note/Pasted%20image%2020221207150903.png)
 
 We need access to admin interface, so i think i should do something with page **/role-selector**.
