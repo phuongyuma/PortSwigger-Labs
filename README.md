@@ -20,3 +20,5 @@ Client-Side
 - [DOM-based](Client-side/DOM-based/DOM-based.md)
 - [WebSockets](Client-side/WebSockets/WeSockets.md)
 
+Slide for [HTTP Header Security](https://www.canva.com/design/DAFU4ahEmik/ncR_ZBonJLtzd3QFMmCeQQ/edit?utm_content=DAFU4ahEmik&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+

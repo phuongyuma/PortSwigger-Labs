@@ -1,32 +1,11 @@
 
-### Lab: [CSRF where token validation depends on request method](https://portswigger.net/web-security/csrf/lab-token-validation-depends-on-request-method)
-
-	Description: This lab's email change functionality is vulnerable to CSRF. It attempts to block CSRF attacks, but only applies defenses to certain types of requests. 
-	To solve the lab, use your exploit server to host an HTML page that uses a CSRF attack to change the viewer's email address. 
-	You can log in to your own account using the following credentials: `wiener:peter`
-
-Step 1: Check **csrf token** validate depends  on request method
-Because this application's token validate depends on request method, we can attack CSRF with GET method to bypass the validation
-
-
-Step 2: 
-**Code to input on exploit server**
-```
-<form action="https://0a72001903f3cfa7c1009cc8005a0072.web-security-academy.net/my-account/change-email">
-    <input type="hidden" name="email" value="abcd&#64;testtest">
-    <input type="submit" value="submit">
-</form>
-<script>
-        document.forms[0].submit();
-</script>
-```
 
 ### Lab: [CSRF where token is duplicated in cookie](https://portswigger.net/web-security/csrf/lab-token-duplicated-in-cookie)
 
 	Description: This lab's email change functionality is vulnerable to CSRF. It attempts to use the insecure "double submit" CSRF prevention technique.
 	To solve the lab, use your exploit server to host an HTML page that uses a [CSRF attack](https://portswigger.net/web-security/csrf) to change the viewer's email address. You can log in to your own account using the following credentials: `wiener:peter`
 
-Step 1: Get an overview of what the lab has to offer
+**Step 1**: Get an overview of what the lab has to offer
 We have a vulnerabitlity![](../../Img_note/Pasted%20image%2020221214043047.png) web application, an exploit server, a credential: '**wiener:peter**'
 
 **Vunlnerability Web Applicataion**:
@@ -38,7 +17,7 @@ We have a vulnerabitlity![](../../Img_note/Pasted%20image%2020221214043047.png) 
 - Create a response, we will use this to attack **Cross-site request forgery**, we will put the payload in section body
 ![](../../Img_note/Pasted%20image%2020221214043150.png)
 
-Step 2: Check the csrf token 
+**Step 2**: Check the csrf token 
 Login with `wiener:peter` and update an random email
 When update email, the browser will sent this request to server. I sent this request to **Burp Repeater**
 ![](../../Img_note/Pasted%20image%2020221214050038.png)
@@ -56,7 +35,7 @@ The csrf at the Cookie will be set to abchehe
 
 ![](../../Img_note/Pasted%20image%2020221214052335.png)
 
-Step 3: Create the payload
+**Step 3**: Create the payload
 We will use POST method to get responses from malicious link to browser. After that we put malicious link to tag **img**
 - add ==SameSite=None== on the malicious link, if **SameSite=Strict**, the browser will not include the cookie in any requests that originate from another site. [More](https://portswigger.net/web-security/csrf/samesite-cookies)
 ```
@@ -75,4 +54,6 @@ Input the payload to section body
 ![](../../Img_note/Pasted%20image%2020221214044322.png)
 Click **Store** to save and click **View exploit** to see the result: the email has been changed to **abcd@testtest**
 ![](../../Img_note/Pasted%20image%2020221214044236.png)
+
+Click ==Delliver to victim== to finish the lab
 ![](../../Img_note/Pasted%20image%2020221214045543.png)

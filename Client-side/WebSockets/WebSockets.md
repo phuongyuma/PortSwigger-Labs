@@ -16,7 +16,13 @@ I go to **Proxy > Options** and use  `X-Forwarded-For` to connect to tha web app
 
 Step 3: Turn on **Burp Intercept** 
 Use fuction **Chat** again but turn on **Burp Intercept**. 
+When see a message with `"user":"You"`, i try to change the content to this script
+
+> <img src-1 oNeRror=alert`1`?>
+
+I changing `onerror` to `oNeRror` for confussing the application, and sent this message through web socket
 ![](../../Img_note/Pasted%20image%2020221215232159.png)
 
 ![](../../Img_note/Pasted%20image%2020221215231813.png)
+
 ![](../../Img_note/Pasted%20image%2020221215232235.png)
