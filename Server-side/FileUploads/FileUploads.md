@@ -11,6 +11,7 @@ When i upload an normal image
 When i upload a php file
 ![](../../Img_note/Pasted%20image%2020221208142313.png)
 
+
 ![](../../Img_note/Pasted%20image%2020221208150156.png)
 
 ![](../../Img_note/Pasted%20image%2020221208150319.png)

